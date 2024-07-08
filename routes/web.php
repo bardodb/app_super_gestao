@@ -19,13 +19,13 @@ Route::prefix('/app')->group(function () {
 
         Route::get('/clientes', function () { return 'Clientes';})->name('app.clientes');
 
-        Route::get('/fornecedores', function () { return 'Fornecedores';})->name('app.fornecedores');
+        Route::get('/fornecedores',  'App\Http\Controllers\FornecedorController@index')->name('app.fornecedores');
 
         Route::get('/produtos', function () { return 'Produtos';})->name('app.produtos');
 
     });
 
-Route::get('/teste/{p1}/{p2}', 'TesteController@teste')->name('teste');
+Route::get('/teste/{p1}/{p2}', ['\App\Http\Controllers\TesteController', 'teste'])->name('site.teste');
 
 
 Route::fallback(function () {
