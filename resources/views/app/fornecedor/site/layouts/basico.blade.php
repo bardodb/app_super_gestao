@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <title>Super Gestão - Sobre Nós</title>
         <meta charset="utf-8">
@@ -10,6 +11,7 @@
 
     <body>
 
+        @yield('conteudo')
 
     </body>
 </html>

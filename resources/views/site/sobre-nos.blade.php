@@ -1,4 +1,7 @@
 @extends('site.layouts.basico')
+
+
+@section('conteudo')
         <div class="topo">
 
             <div class="logo">
@@ -43,3 +46,4 @@
                 <img src="{{ asset ('img/mapa.png')}}">
             </div>
         </div>
+@endsection
